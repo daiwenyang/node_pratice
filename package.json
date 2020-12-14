@@ -1,5 +1,5 @@
 {
-  "name": "babel-typescript-sample",
+  "name": "node-pratice",
   "version": "0.7.2",
   "license": "MIT",
   "scripts": {
@@ -8,7 +8,8 @@
     "build": "npm run build:types && npm run build:js",
     "build:types": "tsc --emitDeclarationOnly",
     "build:js": "babel src --out-dir lib --extensions \".ts,.tsx\" --source-maps inline",
-    "start": "babel-node -x \".ts\" src/index.ts"
+    "start": "babel-node -x \".ts\" src/index.ts",
+    "koa": "nodemon -e ts --exec ts-node src/koa.ts"
   },
   "devDependencies": {
     "@babel/cli": "^7.8.3",
@@ -19,5 +20,16 @@
     "@babel/preset-typescript": "^7.12.7",
     "@types/node": "^14.14.11",
     "typescript": "^3.9.7"
+  },
+  "dependencies": {
+    "@koa/router": "^10.0.0",
+    "@types/koa": "^2.11.6",
+    "@types/koa-bodyparser": "^4.3.0",
+    "@types/koa-router": "^7.4.1",
+    "body-parser": "^1.19.0",
+    "koa": "^2.13.0",
+    "koa-bodyparser": "^4.3.0",
+    "koa-router": "^10.0.0",
+    "nodemon": "^2.0.6"
   }
 }

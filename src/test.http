@@ -1,0 +1,13 @@
+
+
+###
+GET http://localhost:3008/articles
+
+### POST
+POST http://localhost:3008/articles/
+content-type: application/json
+
+{
+    "customer": "latte",
+    "items": ["1","2"]
+}
