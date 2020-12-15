@@ -3,11 +3,28 @@
 ###
 GET http://localhost:3008/articles
 
+###
+GET http://localhost:3008/articles/2
+
 ### POST
 POST http://localhost:3008/articles/
 content-type: application/json
 
 {
-    "customer": "latte",
-    "items": ["1","2"]
+    "title": "title2",
+    "content": "this is title2 content"
+}
+
+
+###
+delete http://localhost:3008/articles/2
+
+
+###
+put http://localhost:3008/articles/1
+content-type: application/json
+
+{
+    "title": "title1",
+    "content": "this is title1 content update"
 }
