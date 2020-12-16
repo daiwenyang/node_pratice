@@ -6,3 +6,4 @@
 4. 使用splite作为数据库；
 5. 使用rest-client插件测试接口；
 6. 全局安装ts-node,结合nodemon实现后端代码热更新（注意是否能具有babel的功能）；
+7. 全局安装nodemon，结合vscode实现ts代码的断点调试功能；
